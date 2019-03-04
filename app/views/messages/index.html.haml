@@ -1,0 +1,53 @@
+!!!
+%html{lang: "ja"}
+  %head
+    %meta{charset: "utf-8"}
+  %body
+  .flash-box
+  .wrapper
+    .chat-side
+      .side-header
+        .side-header__box
+          %p.side-header__box__user-name name
+          %ul.side-header__box__menu
+            %li.side-header__box__menu__edit-user
+              = link_to"Link_path" do
+                %i.fa.fa-edit
+            %li.side-header__box__menu__new-group
+              = link_to"Link_path" do
+                %i.fa.fa-cog
+      .groups
+        %a
+          .group
+            %p.group__group-name aaa
+            %p.group__latest-message おはよう
+
+    .chat-main
+      .main-header
+        .main-header__left-box
+          %h2.main-header__left-box__current-group aaa
+          %ul.main-header__left-box__member-list
+            Member :
+            %li.main-header__left-box__member-list__member  name
+        = link_to"Link_path" do
+          .main-header__edit-btn Edit
+      .messages
+        .message
+          .message__upper-info
+            %p.message__upper-info__talker name
+            %p.message__upper-info__date 2019/03/01
+          %p.message__text おはよう
+
+
+      .form
+        %form.new_message
+          .input-box
+            %input.input-box__text{:placeholder => "type a message", :type => "text"}
+            %label.input-box__image
+              %i.fa.fa-image
+              %input.input-box__image__file
+          %input.submit-btn{type: 'submit', value: 'Send'}
+
+
+
+
