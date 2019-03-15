@@ -41,6 +41,9 @@
       padding: 20px 20px 0;
       overflow: scroll;
       .group{
+        a{
+          color: white;
+        }
         margin-bottom: 40px;
         &__group-name{
           font-size: 15px;
