@@ -12,4 +12,8 @@ class Group < ApplicationRecord
       'まだメッセージはありません。'
     end
   end
+
+  def member
+  end
 end
+
