@@ -42,7 +42,7 @@ $(function() {
       var html = buildHTML(data);
       $('.messages').append(html);
       ScrollToNewMessage();
-      $('.form__message').val('');
+      $('.new_message')[0].reset();
       $(".form__submit").prop('disabled', false);
     })
     .fail(function(){
